@@ -1,0 +1,24 @@
+﻿@model BeerRecipeJournal.Models.BeerRecipe
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@Model.BeerName</title>
+</head>
+<body>
+    <div>
+        <h1>@Model.BeerName</h1>
+        <h2>Sytle: @Model.StyleName</h2>
+        <h5>IBUs: @Model.Ibu</h5>
+        <h5>Original Gravity: @Model.Og</h5>
+        <h5>Final Gravity: @Model.Fg</h5>
+        <h5>ABV: @Model.Abv%</h5>
+    </div>
+</body>
+</html>
